@@ -22,12 +22,11 @@ public static class XOREncryption
         //string projectPath = "";
         if (args.Length > 0)
         {
-            projectPath = args[0]; // Thay đổi đường dẫn này đến thư mục gốc của dự án
-
+            projectPath = args[0]; 
         }
         else
         {
-            Console.WriteLine("nhập folder project");
+            Console.WriteLine("Press folder project");
             projectPath = Console.ReadLine()!;
         }
         if (File.Exists(projectPath + "\\xor_atribuite.cs"))
